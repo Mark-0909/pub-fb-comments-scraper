@@ -13,7 +13,7 @@ class MonterazzasCommentScraper(BaseScraper):
             headless=False,
         )
 
-        self.csv_file = Path("outputs/monterazzas-comments.csv")
+        self.csv_file = Path("monterazzas-comments.csv")
         self.csv_file.parent.mkdir(parents=True, exist_ok=True)
 
         self.total_scraped = 0
